@@ -12,10 +12,6 @@ public class GUI {
 
     private final Map<JCheckBox, Function<Dish_interface, Dish_interface>> decoratorsMap = new LinkedHashMap<>();
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(GUI::new);
-    }
-
     public GUI() {
         JFrame frame = new JFrame("Таверна");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
