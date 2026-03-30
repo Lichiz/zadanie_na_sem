@@ -15,7 +15,7 @@ public class GUI {
     public GUI() {
         JFrame frame = new JFrame("Таверна");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 350);
+        frame.setSize(500, 600);
         frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
 
         initOption("Огненный соус (+10)", d -> new Sauce_dec(d));
