@@ -17,7 +17,7 @@ public class GUI {
     }
 
     public GUI() {
-        JFrame frame = new JFrame("Таверна 'Гарцующая кобыла'");
+        JFrame frame = new JFrame("Таверна");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 350);
         frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
@@ -79,7 +79,7 @@ public class GUI {
 
     private void showLogs() {
         if (orderHistory.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "История пуста, путник!");
+            JOptionPane.showMessageDialog(null, "История пуста");
             return;
         }
         JOptionPane.showMessageDialog(null, String.join("\n", orderHistory));
