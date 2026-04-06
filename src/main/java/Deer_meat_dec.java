@@ -1,7 +1,15 @@
-public class Deer_meat_dec implements Dish_interface {
-    private final Dish_interface dish;
-    public Deer_meat_dec(Dish_interface d) { this.dish = d; }
+public class Deer_meat_dec extends DishDecorator {
+    public Deer_meat_dec(Dish_interface dish) {
+        super(dish);
+    }
 
-    @Override public int return_price() { return dish.return_price() + 20; }
-    @Override public String return_name() { return dish.return_name() + " с двойной порцией оленины"; }
+    @Override
+    public int return_price() {
+        return super.return_price() + 20;
+    }
+
+    @Override
+    public String return_name() {
+        return super.return_name() + " с двойной порцией оленины";
+    }
 }

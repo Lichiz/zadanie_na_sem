@@ -1,7 +1,15 @@
-public class Nordic_bread_dec implements Dish_interface {
-    private final Dish_interface dish;
-    public Nordic_bread_dec(Dish_interface d) { this.dish = d; }
+public class Nordic_bread_dec extends DishDecorator {
+    public Nordic_bread_dec(Dish_interface dish) {
+        super(dish);
+    }
 
-    @Override public int return_price() { return dish.return_price() + 7; }
-    @Override public String return_name() { return dish.return_name() + " с нордской лепешкой"; }
+    @Override
+    public int return_price() {
+        return super.return_price() + 7;
+    }
+
+    @Override
+    public String return_name() {
+        return super.return_name() + " с нордской лепешкой";
+    }
 }
