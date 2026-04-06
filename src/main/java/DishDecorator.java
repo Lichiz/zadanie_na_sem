@@ -1,5 +1,5 @@
 public abstract class DishDecorator implements Dish_interface {
-    protected final Dish_interface dish;
+    private final Dish_interface dish;
 
     public DishDecorator(Dish_interface dish) {
         this.dish = dish;
